@@ -1,3 +1,4 @@
+import { showModal } from '../render-modal/render-modal';
 import './render-add-button.css';
 
 export const renderAddButton = (element, callback) => {
@@ -9,9 +10,7 @@ export const renderAddButton = (element, callback) => {
 
     //TODO
     fabButton.addEventListener('click', () => {
-        console.log('Llamada Externa');
-        if(!callback) return;
-        callback();
+        showModal();
     });
     
 }
